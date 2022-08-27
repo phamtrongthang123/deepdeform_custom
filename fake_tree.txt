@@ -1,0 +1,28 @@
+fake_data/
+├── train_alignments.json
+├── train_masks.json
+├── train_matches.json
+├── train_occlusions.json
+├── train_selfsupervised.json
+├── val
+│   └── seq003
+│       ├── color
+│       │   ├── 000000.jpg
+│       ├── depth
+│       │   ├── 000000.png
+│       ├── intrinsics.txt
+│       ├── mask
+│       │   ├── 000000_gloves.png
+│       ├── optical_flow
+│       │   ├── gloves_000000_000100.oflow
+│       ├── scene_flow
+│       │   ├── gloves_000000_000100.sflow
+│       └── VolumeFormat
+│           ├── frame-000000.color.png
+├── val_alignments.json
+├── val_masks.json
+├── val_matches.json
+├── val_occlusions.json
+└── val_selfsupervised.json
+
+8 directories, 3781 files

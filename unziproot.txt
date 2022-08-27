@@ -1,0 +1,6 @@
+unzip_root/
+├── seq000_100_000000.ply
+├── seq000_100_000050.ply
+└── seq000_100_000100.ply
+
+0 directories, 3 files

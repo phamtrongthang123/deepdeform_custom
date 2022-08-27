@@ -136,6 +136,8 @@ def evaluate(
 
     print("-> Sequence processing")
     for seq_id in seq_ids:
+        if seq_id != 'seq003':
+            continue
         print("Processing sequence {}".format(seq_id))
         seq_dir = os.path.join(sequence_data_dir, seq_id)
         seq_frame_pairs = matches_per_seq[seq_id]
@@ -189,13 +191,13 @@ def evaluate(
 
                 # Load depth map.
                 depth_path = os.path.join(depth_dir, "{}.png".format(frame_id))
-                assert os.path.exists(depth_path), "Depth doesn't exist!"
+                assert os.path.exists(depth_path), f"Depth doesn't exist! {depth_path}"
 
                 depth = io.imread(depth_path)
 
                 # Load segmentation mask.
                 mask_path = os.path.join(mask_dir, "{}.png".format(frame_id))
-                assert os.path.exists(mask_path), "Mask doesn't exist!"
+                assert os.path.exists(mask_path), f"Mask doesn't exist! {mask_path}"
 
                 mask = io.imread(mask_path)
 
